@@ -14,7 +14,7 @@ class Record
 {
 private:
 	string recordID;
-	string firstname;
+	string firstName;
 	string lastName;
 	string age;
 	string telephone;
