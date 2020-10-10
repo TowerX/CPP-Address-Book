@@ -6,17 +6,53 @@
 #include "Record.h"
 
 using namespace std;
-string RECORDS[10];
+
+Record book[10];
 
 void recInput() {
+	int i = 0;
 
+	for (i = 0; i < 10; i++)
+	{
+		cout << "<><> Input Section <><>" << endl;
+		cout << "--------------------------------" << endl;
+		cout << "\n\nRecord Number: ";
+		string r = "";
+		cin >> r;
+		book[i].setRecordID(r);
+
+		cout << "First Name: ";
+		string f = "";
+		cin >> f;
+		book[i].setFirstName(f);
+
+		cout << "Last Name: ";
+		string l = "";
+		cin >> l;
+		book[i].setLastName(l);
+
+		cout << "Age: ";
+		string a = "";
+		cin >> a;
+		book[i].setAge(a); 
+
+		cout << "Telephone: ";
+		string t = "";
+		cin >> t;
+		book[i].setTelephone(t);
+	}	
 }
 
 void recDisplay() {
 
 }
 
-void menu() {
+int main()
+{
+	/* Testing the constructor override.
+	Record Book1("ADB");
+	cout << Book1.getRecordID() << endl; 
+	*/
 	int menuChoice;
 
 	while (1)
@@ -33,7 +69,7 @@ void menu() {
 
 		switch (menuChoice)
 		{
-		case 1: 
+		case 1:
 			cin.ignore(); // Clears the input
 			recInput();
 			break;
@@ -44,7 +80,8 @@ void menu() {
 
 		case 3:
 			// Exit the program by returning false on the while loop
-			exit;
+			cout << "\n\nClosing Program..." << endl;
+			return 0;
 			break;
 
 		default:
@@ -52,13 +89,4 @@ void menu() {
 			break;
 		}
 	}
-}
-
-int main()
-{
-	cout << "Hello World!\n";
-	Record Book1;
-
-	Book1.setRecordID("5");
-	cout << Book1.getRecordID() << endl;
 }

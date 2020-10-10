@@ -23,6 +23,12 @@ public:
 	Record() {
 
 	}
+
+	// Overriding constructor
+	Record(string idIn) :recordID(idIn) {
+
+	}
+
 	// Set
 	void setRecordID(string idIn);
 	void setFirstName(string fNameIn);
