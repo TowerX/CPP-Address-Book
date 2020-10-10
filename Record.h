@@ -1,16 +1,16 @@
 /*  Record Class Declaration File
 	Record.h
 */
-#include <cstdlib>;
-#include <iostream>;
-#include <string>;
+#include <cstdlib>
+#include <iostream>
+#include <string>
 
 using namespace std; // Bad practice
 
 #pragma once
-#ifndef REPORT_H
-#define REPORT_H
-class Report
+#ifndef RECORD_H
+#define RECORD_H
+class Record
 {
 private:
 	string recordID;
