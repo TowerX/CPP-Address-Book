@@ -1,3 +1,5 @@
+/* Record Class Implementation File */
+
 #include "Record.h"
 #include <string>
 

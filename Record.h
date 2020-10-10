@@ -19,6 +19,10 @@ private:
 	string age;
 	string telephone;
 public:
+	// Default constructor
+	Record() {
+
+	}
 	// Set
 	void setRecordID(string idIn);
 	void setFirstName(string fNameIn);
