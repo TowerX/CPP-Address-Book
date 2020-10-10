@@ -1,4 +1,9 @@
-/* Record Class Implementation File */
+/* 
+Author: Jay Torres
+Date: October 10, 2020
+FileName: Record.cpp
+Purpose: Record Class Implementation File 
+*/
 
 #include "Record.h"
 #include <string>

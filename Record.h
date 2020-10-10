@@ -1,5 +1,8 @@
-/*  Record Class Declaration File
-	Record.h
+/*  
+Author: Jay Torres
+Date: October 10, 2020
+FileName: Record.h
+Purpose: Record Class Declaration File
 */
 #include <cstdlib>
 #include <iostream>

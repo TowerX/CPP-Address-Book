@@ -1,6 +1,9 @@
-// main.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
+/*
+Author: Jay Torres
+Date: October 10, 2020
+FileName: main.cpp
+Purpose: Address Book Program - Allows the users to navigate a menu, input and display records inside the book program.
+*/
 #include <iostream>
 #include <string>
 #include <cstring>
