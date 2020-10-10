@@ -19,6 +19,13 @@ private:
 	string age;
 	string telephone;
 public:
+	// Set
+	void setRecordID(string idIn);
+	void setFirstName(string fNameIn);
+	void setLastName(string lNameIn);
+	void setAge(string ageIn);
+	void setTelephone(string telIn);
 
+	// Get
 };
 #endif
