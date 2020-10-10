@@ -27,5 +27,10 @@ public:
 	void setTelephone(string telIn);
 
 	// Get
+	string getRecordID();
+	string getFirstName();
+	string getLastName();
+	string getAge();
+	string getTelephone();
 };
 #endif
