@@ -3,6 +3,9 @@
 
 #include <iostream>
 #include <string>
+#include <cstring>
+#include <cstdlib>	
+#include <iomanip>
 #include "Record.h"
 
 using namespace std;
@@ -10,12 +13,11 @@ using namespace std;
 Record book[10];
 
 void recInput() {
-	int i = 0;
 
-	for (i = 0; i < 10; i++)
+	for (int i = 0; i < 10; i++)
 	{
 		cout << "<><> Input Section <><>" << endl;
-		cout << "--------------------------------" << endl;
+		cout << "-----------------------" << endl;
 		cout << "\n\nRecord Number: ";
 		string r = "";
 		cin >> r;
@@ -40,11 +42,30 @@ void recInput() {
 		string t = "";
 		cin >> t;
 		book[i].setTelephone(t);
+
+		// Prompt to continue or stop adding Records
+		string answer = "";
+		cout << "\n\nWould you like to add another record?" << endl;
+		cout << "Type \"Yes\" to continue otherwise type any number to stop." << endl;
+		cin >> answer;
+
+		if (answer == "Yes")
+		{
+			continue;
+		}
+		else {
+			break;
+		}
 	}	
 }
 
 void recDisplay() {
-
+	cout << "\nDisplay Records" << endl;
+	cout << "-------------------------------------------------------------------------------------------------------" << endl;
+	for (int i = 0; i < 10; i++) {
+		cout << setw(5) << "Record ID: " << setw(7) << book[i].getRecordID() << " | " << "First Name: " << setw(5) << book[i].getFirstName() << " | " << "Last Name: " << setw(10) << book[i].getLastName() << " | " << "Age: " << setw(10) << book[i].getAge() << " | " << "Telephone: " << setw(10) << book[i].getTelephone() << endl;
+	}
+	cout << "\n\n";
 }
 
 int main()
