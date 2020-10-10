@@ -70,10 +70,6 @@ void recDisplay() {
 
 int main()
 {
-	/* Testing the constructor override.
-	Record Book1("ADB");
-	cout << Book1.getRecordID() << endl; 
-	*/
 	int menuChoice;
 
 	while (1)
@@ -106,7 +102,7 @@ int main()
 			break;
 
 		default:
-			cout << "Did you selected any options?" << endl;
+			cout << "Please select any of the three options.\n\n" << endl;
 			break;
 		}
 	}
