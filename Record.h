@@ -31,22 +31,22 @@ public:
 
 	Record(string idIn, string fNameIn, string lNameIn, string ageIn, string telIn)
 		:recordID(idIn), firstName(fNameIn), lastName(lNameIn), age(ageIn), telephone(telIn) {
-		// Age validation
-		if (age.length() == 2)
-		{
-			age = ageIn;
-		}
-		else {
-			age = "xx";
-		}
-		// Telephone validation
-		if (telephone.length() == 12) {
+		//// Age validation
+		//if (age.length() == 2)
+		//{
+		//	age = ageIn;
+		//}
+		//else {
+		//	age = "xx";
+		//}
+		//// Telephone validation
+		//if (telephone.length() == 12) {
 
-			telephone = telIn;
-		}
-		else {
-			telephone = "Dinosaur";
-		}
+		//	telephone = telIn;
+		//}
+		//else {
+		//	telephone = "Dinosaur";
+		//}
 	}
 
 	// Set

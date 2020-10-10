@@ -75,7 +75,7 @@ int main()
 	while (1)
 	{
 		cout << "Address Book Program" << endl;
-		cout << "\n\nPress the number to action" << endl;
+		cout << "\n\nUse the menu numbers below:" << endl;
 		cout << "\n\n1 - Input Record" << endl;
 		cout << "2 - Display Records" << endl;
 		cout << "3 - Exit" << endl;
